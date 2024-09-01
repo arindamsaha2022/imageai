@@ -40,6 +40,10 @@ const Home = async ({ searchParams }: SearchParamProps) => {
           page={page}
         />
       </section>
+      <footer className="footer">
+        made with love by arindam saha 
+      </footer>
+
     </>
   )
 }

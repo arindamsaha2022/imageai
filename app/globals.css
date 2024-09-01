@@ -379,3 +379,10 @@
   font-weight: 600;
   color: #384262;
 }
+.footer{
+  background-color: blue;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+}
