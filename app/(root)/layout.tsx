@@ -8,6 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { Toaster } from '@/components/ui/toaster'
 
 
 const Layout = ({children}: {children: React.ReactNode} ) => {
@@ -20,6 +21,7 @@ const Layout = ({children}: {children: React.ReactNode} ) => {
            {children}
           </div>
         </div>
+        <Toaster/>
     </main>
   )
 }

@@ -17,7 +17,7 @@ const Sidebar = () => {
           <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
         </Link>
 
-        <nav className="sidebar-nav">
+        <nav className="sidebar-nav " >
           <SignedIn>
             <ul className="sidebar-nav_elements">
               {navLinks.slice(0, 6).map((link) => {
