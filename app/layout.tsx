@@ -22,12 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<ClerkProvider>
       <html lang="en">
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
-          {children}
+          <ClerkProvider>
+            {children}
+          </ClerkProvider>
         </body>
       </html>
-</ClerkProvider>
   );
 }

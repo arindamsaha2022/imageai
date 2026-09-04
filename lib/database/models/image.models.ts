@@ -12,10 +12,11 @@ export interface IImage extends Document {
     aspectRatio?: string;
     color?: string;
     prompt?: string;
-    author: {
+    // author can be an ObjectId (string) or a populated user object
+    author: string | {
       _id: string;
-      firstName: string;
-      lastName: string;
+      firstName?: string;
+      lastName?: string;
     }
     createdAt?: Date;
     updatedAt?: Date;
@@ -37,8 +38,8 @@ const ImageSchema = new Schema({
     author: { type: Schema.Types.ObjectId, ref: 'User' },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
-  });
-  
+});
+
 const Image = models?.Image || model('Image', ImageSchema);
 
 export default Image;

@@ -14,7 +14,7 @@ if(!cached) {
     conn: null, promise: null 
   }
 }
-
+//connect to database
 export const connectToDatabase = async () => {
   if(cached.conn) return cached.conn;
 
